@@ -1,5 +1,5 @@
-## LAMP Deploy Script for Centos 6.5/6.6 systems
-Very first and 'raw' version of LAMP Deploy Script. LAMP Deploy Script - written with Python 2.7 and should run "out of the box" on Centos 6.5/6.6 systems. Script was written to help web developers and any new user in Linux to deploy his own, ready to use web server. In one click user can install Apache, MySQL and PHP. 
+## LAMP Deploy Script for CentOS 6.5/6.6 systems
+Very first and 'raw' version of LAMP Deploy Script. LAMP Deploy Script - written with Python 2.7 and should run "out of the box" on CentOS 6.5/6.6 systems. Script was written to help web developers and any new user in Linux to deploy his own, ready to use web server. In one click user can install Apache, MySQL and PHP.
 
 ## What script do?
 - Add EPEL & IUS repository to the system
@@ -23,4 +23,4 @@ LAMP Deploy Script has been checked only on 64-bit CentOS, you should avoid to u
 Script will not run, if you don't use CentOS 6.5/6.6
 
 ## Warning, BUGZZzz
-This script still conteins bugs and it need a lot of polish.
+This script still contains bugs and it need a lot of polish.
