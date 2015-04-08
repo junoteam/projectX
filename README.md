@@ -20,6 +20,7 @@ For now, script contains only two files written on Python:
 
 You should run `Centos66_64bit_LAMP.py` to see "Welcome Screen"
 LAMP Deploy Script has been checked only on 64-bit CentOS, you should avoid to use on 32-bit server.
+Script will not run, if you don't use CentOS 6.5/6.6
 
 ## Warning, BUGZZzz
-This script still conteins bugs and it need a lot of polish. 
+This script still conteins bugs and it need a lot of polish.
