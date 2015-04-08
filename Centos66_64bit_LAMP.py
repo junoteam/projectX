@@ -2,9 +2,8 @@
 # -*- coding: utf-8 -*-
 # -*- author: Alex Berber-*-
 # -*- license: MIT License -*-
+# Test
 
-import os
-import sys
 from RunStaFF import *
 
 # Checking version of OS should happened before everything
