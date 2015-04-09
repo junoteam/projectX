@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # -*- author: Alex Berber-*-
-# -*- license: MIT License -*-
 
 from RunStaFF import *
 
