@@ -94,6 +94,7 @@ class RunStaff(object):
             print 'Apache successfully installed into the system'
             print 'Go to your local IP ' + RunStaff.check_local_ip() + ' in browser to check it '
 
+    # Install MySQL DB in CentOS 6.5, 6.6
     @staticmethod
     def install_mysql():
         proc = subprocess.Popen(['rpm -qa | grep mysql'], stdout=subprocess.PIPE, shell=True)
@@ -124,6 +125,7 @@ class RunStaff(object):
                     os.system('/etc/init.d/mysqld start')
                     os.system('chkconfig --level 235 mysqld on')
 
+    # Install server-side scripting language PHP
     @staticmethod
     def install_php():
         os.system('yum install php php-mysql php-mbstring php-pear php-common php-devel php-cli -y')

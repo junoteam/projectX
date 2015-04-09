@@ -2,12 +2,11 @@
 # -*- coding: utf-8 -*-
 # -*- author: Alex Berber-*-
 # -*- license: MIT License -*-
-# Test
 
 from RunStaFF import *
 
-# Checking version of OS should happened before everything
-# Check version of Centos/RHEL
+# Checking version of OS should happened before menu appears
+# Check version of CentOS
 RunStaff.check_centos_version()
 
 # Clear screen before to show menu
@@ -22,11 +21,12 @@ while answer:
     1. Check version of your Centos/RHEL
     2. Check Internet connection
     3. Show me my local IP address
+
     ------- LAMP for CentOS 6 -----------
     4. Install EPEL & IUS repository
     5. Install Web Server - Apache
     6. Install Database - MySQL
-    7. Install PHP
+    7. Install Language - PHP
     8. Help with LAMP in CentOS
     9. Exit/Quit
     """)
