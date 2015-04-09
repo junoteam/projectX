@@ -20,14 +20,15 @@ while answer:
     1. Check version of your Centos/RHEL
     2. Check Internet connection
     3. Show me my local IP address
+    4. Open port 80 to Web
 
     ------- LAMP for CentOS 6 -----------
-    4. Install EPEL & IUS repository
-    5. Install Web Server - Apache
-    6. Install Database - MySQL
-    7. Install Language - PHP
-    8. Help with LAMP in CentOS
-    9. Exit/Quit
+    5. Install EPEL & IUS repository
+    6. Install Web Server - Apache
+    7. Install Database - MySQL
+    8. Install Language - PHP
+    9. Help with LAMP in CentOS
+    10. Exit/Quit
     """)
 
     answer = input("Please make your choice: ")
@@ -40,20 +41,24 @@ while answer:
     elif answer == 3:
         print ('\nYour local IP address is: ' + RunStaff.check_local_ip())
     elif answer == 4:
+        print('\nChecking firewall')
+        #os.system('clear')
+        RunStaff.iptables_port()
+    elif answer == 5:
         print ('\nInstalling EPEL and IUS repository to the system...')
         RunStaff.add_repository()
-    elif answer == 5:
+    elif answer == 6:
         print ('\nInstalling Web Server Apache...')
         RunStaff.install_apache()
-    elif answer == 6:
+    elif answer == 7:
         print ('\nInstalling database MySQL...')
         RunStaff.install_mysql()
-    elif answer == 7:
+    elif answer == 8:
         print('\nInstalling PHP...')
         RunStaff.install_php()
-    elif answer == 8:
-        print ('Help')
     elif answer == 9:
+        print ('Help')
+    elif answer == 10:
         print("\nGoodbye...\n")
         answer = None
     else:

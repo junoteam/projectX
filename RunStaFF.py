@@ -22,9 +22,11 @@ class RunStaff(object):
                     print 'You are using: CentOS release 6.6'
                 elif 'release 6.5' in version:
                     print 'You are using: CentOS release 6.5'
+                    file.close()
                 else:
                     print sys.version
                     print 'Your version of Linux incompatible with this script, exit... \n'
+                    file.close()
                     sys.exit()
 
     # Check if Internet connection is working
@@ -37,6 +39,21 @@ class RunStaff(object):
         except urllib2.URLError as err:
             pass
             print 'You are not connected to Internet \n'
+
+    # Open port 80 in IPtables firewall
+    @staticmethod
+    def iptables_port():
+        if os.path.exists('/etc/sysconfig/iptables'):
+            with open('/etc/sysconfig/iptables', 'r') as file:
+                checkport = ''
+                for line in file:
+                    checkport += line
+                if '--dport 80' in checkport:
+                    print 'Port 80 is open'
+                    file.close()
+                else:
+                    print 'Port 80 is closed'
+                    print 'Openning ... '
 
     # Check local IP address
     # Connecting to a UDP address doesn't send packets
