@@ -13,6 +13,20 @@ Script also has support of "Additional tools" that do:
 - Check if you are connected to the Internet
 - Check your local IP address
 
+## To do list:
+- To add full support of Centos 7 (both LEMP & LAMP stacks)
+- To add LEMP stack (Linux, NGinx, MySQL, PHP-FPM with FastCGI)
+- To add option `1-click install LAMP stack`
+- To add option `1-click install LEMP stack`
+- To add option `Additional tools`
+- Different versions of PHP 5.4, 5.5 or 5.6
+- Support of SSL
+- CSF - ConfigServer Security & Firewall (optional)
+- Support of `PhpMyAdmin`
+- Create one binary file by using Cython library (optional)
+- To add full support of Ubuntu 12.04/14.04 LTS (optional)
+- Fixing bugZZzzz
+
 ## How-to use
 For now, script contains only two files written on Python:
 * RunStaFF.py
