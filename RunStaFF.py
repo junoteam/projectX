@@ -10,8 +10,8 @@ import socket
 
 class RunStaff(object):
 
-    VERSION_CENTOS_6 = 'Centos 7'
-    VERSION_CENTOS_7 = 'Centos 6'
+    VERSION_CENTOS_6 = 'Centos 6'
+    VERSION_CENTOS_7 = 'Centos 7'
 
     # Check if user run CentOS 6.5 or 6.6
     @staticmethod
@@ -32,8 +32,6 @@ class RunStaff(object):
                     print sys.version
                     print 'Your version of Linux incompatible with this script, exit... \n'
                     sys.exit()
-                    print version
-                    return version
 
     # Check if Internet connection is working
     @staticmethod
@@ -94,7 +92,7 @@ class RunStaff(object):
                 os.makedirs('/tmp/projectx/repos')
                 os.chdir('/tmp/projectx/repos')
                 os.system('yum install wget -y' + " > /dev/null 2>&1")
-                print 'Installing repository Installing repository EPEL & IUS'
+                print 'Installing repository EPEL & IUS'
                 os.system('wget http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm')
                 os.system('wget http://dl.iuscommunity.org/pub/ius/stable/CentOS/6/x86_64/ius-release-1.0-13.ius.centos6.noarch.rpm')
                 os.system('sudo rpm -Uvh /tmp/projectx/repos/epel-release-6*.rpm')
