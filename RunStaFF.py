@@ -22,6 +22,8 @@ class RunStaff(object):
                     print 'You are using: CentOS release 6.6'
                 elif 'release 6.5' in version:
                     print 'You are using: CentOS release 6.5'
+                elif 'CentOS Linux release 7' in version:
+                    print 'You are using: CentOS 7'
                     file.close()
                 else:
                     print sys.version
