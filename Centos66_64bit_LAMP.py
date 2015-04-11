@@ -73,12 +73,12 @@ def main_menu_centos7():
     # Clear screen before to show menu
     os.system('clear')
 
-if 'release 6.6' in RunStaff.check_centos_version():
+'''if 'release 6.6' in RunStaff.check_centos_version():
     main_menu_centos6()
 elif 'release 6.5' in RunStaff.check_centos_version():
     main_menu_centos6()
 elif 'CentOS Linux release 7' in RunStaff.check_centos_version():
-    main_menu_centos7()
+    main_menu_centos7()'''
 
 
 

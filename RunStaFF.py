@@ -32,6 +32,7 @@ class RunStaff(object):
                     print sys.version
                     print 'Your version of Linux incompatible with this script, exit... \n'
                     sys.exit()
+                    print version
                     return version
 
     # Check if Internet connection is working
