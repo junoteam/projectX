@@ -10,6 +10,9 @@ import socket
 
 class RunStaff(object):
 
+    VERSION_CENTOS_6 = 'Centos 7'
+    VERSION_CENTOS_7 = 'Centos 6'
+
     # Check if user run CentOS 6.5 or 6.6
     @staticmethod
     def check_centos_version():
@@ -19,17 +22,17 @@ class RunStaff(object):
                 for line in file:
                     version += line
                 if 'release 6.6' in version:
-                    print 'You are using: CentOS release 6.6'
+                    print 'You are using: ' + RunStaff.VERSION_CENTOS_6
                 elif 'release 6.5' in version:
-                    print 'You are using: CentOS release 6.5'
+                    print 'You are using: ' + RunStaff.VERSION_CENTOS_6
                 elif 'CentOS Linux release 7' in version:
-                    print 'You are using: CentOS 7'
+                    print 'You are using: ' + RunStaff.VERSION_CENTOS_7
                     file.close()
                 else:
                     print sys.version
                     print 'Your version of Linux incompatible with this script, exit... \n'
-                    file.close()
                     sys.exit()
+                    return version
 
     # Check if Internet connection is working
     @staticmethod
