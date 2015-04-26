@@ -65,6 +65,7 @@ class Centos6(object):
                     contents = "".join(contents)
                     file.write(contents)
                     file.close()
+                    os.system('/etc/init.d/iptables restart' + ' > /dev/null 2>&1')
 
                     print 'Port 80 is closed'
                     print 'Openning ... '
