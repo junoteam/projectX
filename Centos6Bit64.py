@@ -56,6 +56,16 @@ class Centos6(object):
                     print 'Port 80 is open'
                     file.close()
                 else:
+                    file = open('/etc/sysconfig/iptables', 'r')
+                    contents = file.readlines()
+                    file.close()
+
+                    file = open("/etc/sysconfig/iptables", "w")
+                    contents.insert(6, '-A INPUT -p tcp -m tcp --dport 80 -j ACCEPT\n')
+                    contents = "".join(contents)
+                    file.write(contents)
+                    file.close()
+
                     print 'Port 80 is closed'
                     print 'Openning ... '
 
