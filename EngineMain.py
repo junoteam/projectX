@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# -*- author: Alex Berber-*-
+# -*- author: AlexB -*-
 
-from Centos6Bit64 import *
+from Centos6_Bit64 import *
 
 # Checking version of OS should happened before menu appears
 # Check version of CentOS

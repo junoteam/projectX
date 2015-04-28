@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# -*- author: Alex Berber-*-
+# -*- author: AlexB -*-
 
 import os
 import sys
