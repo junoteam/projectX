@@ -10,7 +10,8 @@ import socket
 
 class Centos6(object):
 
-    VERSION_CENTOS_6 = 'Centos 6'
+    VERSION_CENTOS_6_6 = 'Centos 6.6'
+    VERSION_CENTOS_6_5 = 'Centos 6.5'
     VERSION_CENTOS_7 = 'Centos 7'
 
     # Check if user run CentOS 6.5 or 6.6
@@ -22,9 +23,9 @@ class Centos6(object):
                 for line in file:
                     version += line
                 if 'release 6.6' in version:
-                    print 'You are using: ' + Centos6.VERSION_CENTOS_6
+                    print 'You are using: ' + Centos6.VERSION_CENTOS_6_6
                 elif 'release 6.5' in version:
-                    print 'You are using: ' + Centos6.VERSION_CENTOS_6
+                    print 'You are using: ' + Centos6.VERSION_CENTOS_6_5
                 elif 'CentOS Linux release 7' in version:
                     print 'You are using: ' + Centos6.VERSION_CENTOS_7
                     file.close()
