@@ -13,6 +13,7 @@ Script also has support of "Additional tools" that do:
 - Check version of your system
 - Check if you are connected to the Internet
 - Check your local IP address
+- Check your local host name
 
 ## To do list:
 - To add full support of Centos 7 (both LEMP & LAMP stacks)
