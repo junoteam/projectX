@@ -34,7 +34,7 @@ For now, script contains only two files written on Python:
 * EngineRun.py
 * Centos6.py
 
-You should run `EngineRun.py` to see "Welcome Screen"
+You should run `DeployScript.py` to see "Welcome Screen"
 LAMP Deploy Script has been checked only on 64-bit CentOS 6.5 & 6.6, you should avoid to use on 32-bit server.
 Script will not run, if you don't use CentOS 6.5/6.6
 
