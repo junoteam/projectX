@@ -27,11 +27,10 @@ class SystemUtils(object):
     # Check local hostname
     @staticmethod
     def check_host_name():
-        hostname = socket.gethostbyname()
-        return hostname
+        host_name = socket.getfqdn()
+        print "Hostname is: ", host_name
 
     # Check local IP address
-    # Connecting to a UDP address doesn't send packets
     @staticmethod
     def check_local_ip():
         s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
