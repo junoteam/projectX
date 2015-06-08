@@ -16,7 +16,7 @@ Script also has support of "Additional tools" that do:
 ## To do list:
 - To add full support of Centos 7 (both LEMP & LAMP stacks)
 - To add LEMP stack (Linux, NGinx, MySQL, PHP-FPM with FastCGI)
-- To add option `1-click install LAMP stack`
+- <strike>To add option `1-click install LAMP stack`</strike>
 - To add option `1-click install LEMP stack`
 - To add option `Additional tools`
 - Different versions of PHP 5.4, 5.5 or 5.6
