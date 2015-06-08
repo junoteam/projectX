@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# -*- author: AlexB -*-
+# -*- author: Kung Fury -*-
 
 from Centos6_Bit64 import *
+from SystemUtils import *
 
 # Checking version of OS should happened before menu appears
 # Check version of CentOS
-Centos6.check_centos_version()
+SystemUtils.check_centos_version()
 
 # Clear screen before to show menu
 os.system('clear')
@@ -34,27 +35,27 @@ while answer:
     answer = input("Please make your choice: ")
     if answer == 1:
         print ('\nChecking version of the system: ')
-        Centos6.check_centos_version()
+        SystemUtils.check_centos_version()
     elif answer == 2:
         print ('\nChecking if you connected to the Internet')
-        Centos6.check_internet_connection()
+        SystemUtils.check_internet_connection()
     elif answer == 3:
-        print ('\nYour local IP address is: ' + Centos6.check_local_ip())
+        print ('\nYour local IP address is: ' + SystemUtils.check_local_ip())
     elif answer == 4:
         print('\nChecking firewall')
-        Centos6.iptables_port()
+        Centos6Deploy.iptables_port()
     elif answer == 5:
         print ('\nInstalling EPEL and IUS repository to the system...')
-        Centos6.add_repository()
+        Centos6Deploy.add_repository()
     elif answer == 6:
         print ('\nInstalling Web Server Apache...')
-        Centos6.install_apache()
+        Centos6Deploy.install_apache()
     elif answer == 7:
         print ('\nInstalling database MySQL...')
-        Centos6.install_mysql()
+        Centos6Deploy.install_mysql()
     elif answer == 8:
         print('\nInstalling PHP...')
-        Centos6.install_php()
+        Centos6Deploy.install_php()
     elif answer == 9:
         print ('Help')
     elif answer == 10:
