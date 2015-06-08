@@ -7,6 +7,7 @@ Very first and 'raw' version of LAMP Deploy Script. LAMP Deploy Script - written
 - Install MySQL Community Server Repository
 - Install latest and stable MySQL Community Server
 - Install all necessary PHP packages
+- Install LAMP stack in one click on your server
 
 Script also has support of "Additional tools" that do:
 - Check version of your system
