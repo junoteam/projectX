@@ -57,7 +57,7 @@ class SystemUtils(object):
             print '\n<------------SYSTEM INFO------------>'
             print sys.version
             print 'Your version of Linux incompatible with this script, exit... \n'
-            print '\n<------------SYSTEM INFO------------>'
+            print '<------------SYSTEM INFO------------>'
             sys.exit()
 
 
