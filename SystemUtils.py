@@ -54,11 +54,11 @@ class SystemUtils(object):
                 elif 'CentOS Linux release 7' in version:
                     print 'You are using: ' + SystemUtils.VERSION_CENTOS_7
                     file.close()
-                else:
-                    print sys.version
-                    print 'AlexB'
-                    print 'Your version of Linux incompatible with this script, exit... \n'
-                    sys.exit()
+        else:
+            print sys.version
+            print 'AlexB'
+            print 'Your version of Linux incompatible with this script, exit... \n'
+            sys.exit()
 
 
 
