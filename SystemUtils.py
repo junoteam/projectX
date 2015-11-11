@@ -6,6 +6,7 @@ import socket
 import urllib2
 import os
 import sys
+import platform
 
 class SystemUtils(object):
 
@@ -56,7 +57,9 @@ class SystemUtils(object):
         else:
             print '\n<------------SYSTEM INFO------------>'
             print sys.version
-            print sys.version_info
+            print platform.machine()
+            print platform.platform()
+            print platform.uname()
             print 'Your version of Linux incompatible with this script, exit...'
             print '<------------SYSTEM INFO------------>\n'
             sys.exit()
