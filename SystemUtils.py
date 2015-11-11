@@ -41,6 +41,7 @@ class SystemUtils(object):
     # Check if user run CentOS 6.5 or 6.6
     @staticmethod
     def check_centos_version():
+        print 'Alex'
         if os.path.exists("/etc/redhat-release"):
             with open("/etc/redhat-release", 'r') as file:
                 version = ''
