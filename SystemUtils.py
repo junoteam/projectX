@@ -56,7 +56,6 @@ class SystemUtils(object):
                     file.close()
         else:
             print '\n<------------SYSTEM INFO------------>'
-            print sys.version
             print 'Architecture: ' + platform.machine()
             print 'Platform: ' + platform.platform()
             #print platform.uname()
