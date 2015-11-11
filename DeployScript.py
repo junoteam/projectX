@@ -50,7 +50,7 @@ while answer:
         print('\nChecking firewall')
         Centos6Deploy.iptables_port()
     elif answer == 5:
-        print "Checking locl hostname..."
+        print "Checking local hostname..."
         SystemUtils.check_host_name()
     elif answer == 6:
         print ('\nInstalling EPEL and IUS repository to the system...')

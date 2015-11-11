@@ -55,6 +55,7 @@ class SystemUtils(object):
                     file.close()
                 else:
                     print sys.version
+                    print 'AlexB'
                     print 'Your version of Linux incompatible with this script, exit... \n'
                     sys.exit()
 
