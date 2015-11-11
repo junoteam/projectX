@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# -*- author: Kung Fury -*-
+# -*- author: Alex -*-
 
 from Centos6_Bit64 import *
 from SystemUtils import *

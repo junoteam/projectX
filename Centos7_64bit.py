@@ -1,5 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# -*- author: Kung Fury -*-
+# -*- author: Alex -*-
 
 " Coming soon...."
