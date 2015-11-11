@@ -54,9 +54,12 @@ class SystemUtils(object):
                     print 'You are using: ' + SystemUtils.VERSION_CENTOS_7
                     file.close()
         else:
+            print '\n<------------SYSTEM INFO------------>'
             print sys.version
             print 'Your version of Linux incompatible with this script, exit... \n'
+            print '\n<------------SYSTEM INFO------------>'
             sys.exit()
+
 
 
 
