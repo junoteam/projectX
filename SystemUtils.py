@@ -57,9 +57,9 @@ class SystemUtils(object):
         else:
             print '\n<------------SYSTEM INFO------------>'
             print sys.version
-            print platform.machine()
-            print platform.platform()
-            print platform.uname()
+            print 'Architecture: ' + platform.machine()
+            print 'Platform: ' + platform.system()
+            #print platform.uname()
             print 'Your version of Linux incompatible with this script, exit...'
             print '<------------SYSTEM INFO------------>\n'
             sys.exit()
